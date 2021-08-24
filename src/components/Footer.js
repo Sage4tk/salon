@@ -14,8 +14,8 @@ export default function Footer() {
                 <div>
                     <p>Follow our social media</p>
                     <div className="footer-icons">
-                        <img src={fb}></img>
-                        <img src={ig}></img>
+                        <img src={ig} alt="instagram icon"></img>
+                        <img src={fb} alt="facebook icon"></img>
                     </div>
                 </div>
                 <div>

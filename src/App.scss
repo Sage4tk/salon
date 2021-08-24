@@ -8,8 +8,9 @@ $white: #F6F2EF;
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: 'Space Mono', monospace;
+  overflow-x: hidden;
 }
 
 header {
@@ -31,6 +32,73 @@ h1 {
   h2 {
     font-size: 2rem;
   }
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10%;
+  top: 93px;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 40px;
+  border-radius: 1rem;
+  height: 8px;
+  background-color: #000;
+}
+
+.burger div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+  width: 500px;
+  background: #8E826D;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s;
+  padding: 70px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav p {
+  font-family: 'Caveat', cursive;
+  font-size: 1.6rem;
+}
+
+nav hr {
+  border-color: #000;
+}
+
+.nav-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-control p {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 3rem;
+}
+
+.nav-social-icons img {
+  cursor: pointer;
+}
+
+.nav-social-icons > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.show {
+  transform: translateX(0);
 }
 
 footer {
@@ -92,4 +160,8 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   padding: 0 3rem ;
+}
+
+.footer-icons > * {
+  cursor: pointer;
 }
