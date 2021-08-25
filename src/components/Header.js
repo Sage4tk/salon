@@ -1,9 +1,6 @@
 //svg and img
 import scissor from '../img/scissor.svg';
 
-//components
-import Nav from './Nav';
-
 export default function Header({ name, home }) {
 
     const header2 = () => {
@@ -19,7 +16,6 @@ export default function Header({ name, home }) {
         <header>
             <h1>{name}</h1>
             {header2()}
-            <Nav />
         </header>
     )
 }

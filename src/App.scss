@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Mono+One&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
 
 $white: #F6F2EF;
 
@@ -14,7 +15,7 @@ html, body {
 }
 
 header {
-  padding: 70px 0 0 0;
+  padding: 70px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,9 +71,11 @@ nav {
   justify-content: space-between;
 }
 
-nav p {
+nav a {
   font-family: 'Caveat', cursive;
   font-size: 1.6rem;
+  color: #000;
+  text-decoration: none;
 }
 
 nav hr {
@@ -82,6 +85,10 @@ nav hr {
 .nav-control {
   display: flex;
   justify-content: space-between;
+}
+
+.nav-control img {
+  cursor: pointer;
 }
 
 .nav-control p {
@@ -101,9 +108,139 @@ nav hr {
   transform: translateX(0);
 }
 
+//home page
+.home-gallery {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.home-button button {
+  background: rgba(0, 0, 0, 0);
+  border: solid #000 2px;
+  font-family: 'Space Mono', monospace;
+  padding: 1rem 0;
+  width: 275px;
+  transition: color 1s, background-color 1s;
+  &:hover {
+    background: #000;
+    color: $white;
+  }
+}
+
+.home-button > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+//service page
+.common-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.service-col {
+  width: 360px;
+}
+
+.common-title {
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+  }
+
+  hr {
+    border-color: #000;
+    margin-bottom: 2rem;
+  }
+}
+
+.service-name {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.service-name > *:first-child {
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+
+.service-name > *:last-child {
+  font-style: italic;
+}
+
+//contact page
+.contact-timings p:not(:first-child) {
+  margin-bottom: 4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-timings p span {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.contact-col {
+  width: 360px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.contact-col img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-image {
+  width: 500px;
+  height: auto;
+}
+
+.contact-direction {
+  display: flex;
+}
+
+.contact-col button {
+  width: 275px;
+  padding: 1rem 0;
+  font-family: 'Space Mono', monospace;
+  border: #000 solid 1px;
+  background-color: #CE9EA3;
+  font-weight: bold;
+  transition: background-color 1s;
+  &:hover {
+    background-color: #000;
+    color: $white;
+  }
+}
+
+.contact-direction img {
+  height: 1.4rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.contact-location {
+  margin-bottom: 2rem;
+}
+
+.contact-location p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+//footer section
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100vw;
   height: 280px;
   background-color: #000;

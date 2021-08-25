@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom";
 
 //svg
 import close from "../img/close.svg";
@@ -24,11 +25,11 @@ export default function Nav() {
                 <p>MENU</p>
                 <img src={close} alt="close button" onClick={toggler}></img>
             </div>
-            <p>Services</p>
-            <p>Contact us</p>
-            <p>Our products</p>
-            <p>Lookbook</p>
-            <p>About us</p>
+            <Link to="/">Home</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/contacts">Contact us</Link>
+            <Link to="/products">Our products</Link>
+            <Link to="/about">About us</Link>
             <hr />
             <div className="nav-social-icons">
                 <img src={ig} alt="instagram icon"></img>
