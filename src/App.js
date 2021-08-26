@@ -7,6 +7,7 @@ import './App.scss';
 import Home from './components/Home';
 import Service from './components/Service';
 import Contact from './components/Contact';
+import Products from './components/Products';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route exact path="/" component={Home}/>
             <Route path="/services" component={Service} />
             <Route path="/contacts"component={Contact} />
+            <Route path="/products" component={Products} />
         </Switch>
       </>
     </Router>

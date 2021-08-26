@@ -202,7 +202,14 @@ nav hr {
   height: auto;
 }
 
-.contact-image {
+.contact-col-img {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-col-img {
   width: 500px;
   height: auto;
 }
@@ -238,6 +245,17 @@ nav hr {
 .contact-location p:not(:last-child) {
   margin-bottom: 1rem;
 }
+
+//products page
+.product-gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  line-height: 2.2rem;
+}
+
+
 
 //footer section
 footer {
