@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Service from './components/Service';
 import Contact from './components/Contact';
 import Products from './components/Products';
+import About from './components/About';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/services" component={Service} />
             <Route path="/contacts"component={Contact} />
             <Route path="/products" component={Products} />
+            <Route path="/about" component={About} />
         </Switch>
       </>
     </Router>
