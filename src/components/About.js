@@ -22,7 +22,7 @@ export default function About() {
                         <p>FOUNDER AND CREATIVE DIRECTOR</p>
                     </div>
                     <div className="about-founder-inside">
-                        <img src={owner}></img>
+                        <img src={owner} alt="owner and founder"></img>
                         <div className="about-founder_description">
                             <p>MARY RUSSELL</p>
                             <p>Passion, community, and determination are just a few words that can be used to describe Mary Russell. Mary was already putting herself through beauty school by the age of seventeen. She found inspiration in the city’s style and culture that surrounded her but she was by far captivated by Brooklyn. Mary quickly set her sights on owning her own salon in Brooklyn and in February of 2004, she opened A New You Salon in its original location on Grand Street, in Williamsburg; she was only twenty-three.</p>
@@ -40,7 +40,7 @@ export default function About() {
                             <img src={staff1} alt="LAYLA WHITE"></img>
                             <p>LAYLA WHITE</p>
                             <p>Stylist</p>
-                        </div>x
+                        </div>
                         <div className="staff-box">
                             <img src={staff2} alt="STHEPHANIE OLSON"></img>
                             <p>STHEPHANIE OLSON</p>

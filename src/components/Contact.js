@@ -29,8 +29,8 @@ export default function Contact() {
                     <p>Saturday <span>Closed</span></p>
                 </div>
                 <div className="contact-col-img">
-                    <img className="contact-image" src={contact1} alt="salon picture"></img>
-                    <img className="contact-image" src={contact2} alt="salon picture 2"></img>
+                    <img className="contact-image" src={contact1} alt="salon"></img>
+                    <img className="contact-image" src={contact2} alt="salon 2"></img>
                 </div>
                 <div className="contact-col">
                     <div className="common-title">
